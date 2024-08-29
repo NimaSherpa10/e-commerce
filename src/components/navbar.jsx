@@ -1,5 +1,16 @@
 import cartIcon from "../../public/images/icon-cart.svg";
+import { useState } from "react";
+import CartModel from "../modal/cartModel";
+import { useSelector } from "react-redux";
 function Navbar() {
+  const [cartOpen, setCartOpen] = useState(false);
+  const cartItems = useSelector((state) => state.cart.items);
+
+  const toggleCart = () => {
+    setCartOpen(!cartOpen);
+  };
+
+  const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
   return (
     <>
       <div className="navbar bg-base-100 ">
@@ -29,10 +40,10 @@ function Navbar() {
                 <div>Collections</div>
               </li>
               <li>
-                <div>Men</div>
+                <div>Clothing</div>
               </li>
               <li>
-                <div>Women</div>
+                <div>Gadgets</div>
               </li>
               <li>
                 <div>About</div>
@@ -43,7 +54,7 @@ function Navbar() {
             </ul>
           </div>
           <div className="font-bold text-2xl hover:animate-bounce">
-            sneakers
+            harekmal 10
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -52,10 +63,10 @@ function Navbar() {
               <div>Collections</div>
             </li>
             <li>
-              <div>Men</div>
+              <div>Clothing</div>
             </li>
             <li>
-              <div>Women</div>
+              <div>Gadgets</div>
             </li>
             <li>
               <div>About</div>
@@ -65,9 +76,14 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <div className="navbar-end ">
-          <a className="mr-4">
-            <img src={cartIcon} />
+        <div className="navbar-end relative">
+          <a className="mr-4" onClick={toggleCart}>
+            <img src={cartIcon} alt="Cart" />
+            {totalItems > 0 && (
+              <span className="absolute top-[-2px] right-[56px] bg-red-500 text-white rounded-full px-2 py-1 text-xs">
+                {totalItems}
+              </span>
+            )}
           </a>
           <img
             className="w-12 rounded-full"
@@ -75,6 +91,7 @@ function Navbar() {
           />
         </div>
       </div>
+      <CartModel cartOpen={cartOpen} setCartOpen={setCartOpen} />
     </>
   );
 }
