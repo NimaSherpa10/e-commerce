@@ -41,7 +41,7 @@ Start the development server:
 
 ```bash
 
-npm start
+npm run dev
 ```
 
 ## The application should be running on [http://localhost:5173](http://localhost:5173).
