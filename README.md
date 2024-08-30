@@ -30,13 +30,12 @@ This is a frontend e-commerce application built with React, Redux, and Tailwind 
    cd <project-directory>
    ```
 
-````
+Install dependencies:
 
- Install dependencies:
-  ``` bash
+```bash
 
- npm install
-````
+npm install
+```
 
 Start the development server:
 
@@ -45,30 +44,57 @@ Start the development server:
 npm start
 ```
 
-The application should be running on http://localhost:5173.
-Usage
-Home Page: Users are directed to the sign-up page on initial load.
-Sign Up: Fill out the sign-up form and submit to navigate to the login page.
-Login: Enter login credentials to access the home page.
-Product Browsing: Browse products, view details, and use the filter checkbox.
-Add to Cart: Add products to the cart and view cart contents.
-Checkout: Proceed to checkout (mock implementation without real payment processing).
-Code Structure
-src/components: Contains reusable components like Navbar, Footer, and Product Card.
-src/pages: Contains pages for Sign Up, Login, and other views.
-src/features: Contains Redux slices and state management logic.
-src/hooks: Custom hooks for data fetching and other utilities.
-src/App.jsx: Main application component with routing logic.
-src/main.jsx: Entry point for React rendering and application setup.
-API Endpoints
-Product API: Fake Store API
-Contributing
+## The application should be running on [http://localhost:5173](http://localhost:5173).
+
+## Usage
+
+### Home Page
+
+Users are directed to the sign-up page on initial load.
+
+### Sign Up
+
+Fill out the sign-up form and submit to navigate to the login page.
+
+### Login
+
+Enter login credentials to access the home page.
+
+### Product Browsing
+
+Browse products, view details, and use the filter checkbox.
+
+### Add to Cart
+
+Add products to the cart and view cart contents.
+
+### Checkout
+
+Proceed to checkout (mock implementation without real payment processing).
+
+## Code Structure
+
+- **src/components**: Contains reusable components like Navbar, Footer, and Product Card.
+- **src/pages**: Contains pages for Sign Up, Login, and other views.
+- **src/features**: Contains Redux slices and state management logic.
+- **src/hooks**: Custom hooks for data fetching and other utilities.
+- **src/App.jsx**: Main application component with routing logic.
+- **src/main.jsx**: Entry point for React rendering and application setup.
+
+## API Endpoints
+
+- **Product API**: [Fake Store API](https://fakestoreapi.com/products)
+
+## Contributing
+
 Contributions are welcome! Please fork the repository and submit a pull request with your changes. For major changes, please open an issue first to discuss what you would like to change.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## License
 
-Contact
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
 For any questions or inquiries, you can reach out to:
 
-Email: nimanurusherpa2022@gmail.com
+- **Email**: [nimanurusherpa2022@gmail.com](mailto:nimanurusherpa2022@gmail.com)
