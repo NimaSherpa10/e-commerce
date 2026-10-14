@@ -97,4 +97,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For any questions or inquiries, you can reach out to:
 
-- **Email**: [nimanurusherpa2022@gmail.com](mailto:nimanurusherpa2022@gmail.com)
+- **Email**: [nimanurusherpa2022@gmail.com](mailto:nimalamasherpa2026@gmail.com
+- )
